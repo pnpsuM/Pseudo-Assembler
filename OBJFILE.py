@@ -1,13 +1,13 @@
 from SICASM import *
 
 def main():
-    print('파일 이름 입력: ', end = '')
+    # print('파일 이름 입력: ', end = '')
     # NAME = input().upper()
     NAME = 'SRCFILE'
     OBJCode = OBJCODEGen(NAME)
     WriteOBJFILE(OBJCode)
-    print("Done, press any key...")
-    input()
+        
+    return OBJCode
 
 def OBJCODEGen(NAME, optabPath = 'optab.txt'):
     with open(optabPath, 'r') as f:

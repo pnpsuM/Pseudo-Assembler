@@ -21,7 +21,7 @@ def OPTABGen(lines):
 
 def OPTABCheck(OPTAB, query):
         try:
-            print(f'\nCode for the query instruction ({query}): {OPTAB[query]}')
+            # print(f'\nCode for the query instruction ({query}): {OPTAB[query]}')
             return OPTAB[query]
         except KeyError as e:
             print(f'\nCouldn\'t find a matching instruction {query}')
